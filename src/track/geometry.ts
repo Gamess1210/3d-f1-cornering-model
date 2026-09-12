@@ -51,7 +51,26 @@ export function sampleTrack(corner: CornerData, dist_m: number): TrackFrame {
   const slope = d1 > d0 ? (corner.elevationAt(d1) - corner.elevationAt(d0)) / (d1 - d0) : 0;
 
   const position = new THREE.Vector3(s.x, elev, -s.y);
-  const tangent = new THREE.Vector3(s.tx, slope, -s.ty).normalize();
+
+  // 2D tangent from a central difference of POSITION (not the piecewise segment
+  // direction): the raw centerline is polyline data with ~5 m knots, and on a
+  // 17 m hairpin the segment direction jumps ~17 deg at each knot, which makes
+  // adjacent ribbon cross-sections cross on the inside (dark folded slivers).
+  // The central difference is continuous across knots.
+  const TAN_H = 2.5;
+  const pa = sampleCenterline2D(corner.centerline, clampDist(corner, d - TAN_H));
+  const pb = sampleCenterline2D(corner.centerline, clampDist(corner, d + TAN_H));
+  let tx = pb.x - pa.x;
+  let ty = pb.y - pa.y;
+  const tl = Math.hypot(tx, ty);
+  if (tl < 1e-6) {
+    tx = s.tx;
+    ty = s.ty;
+  } else {
+    tx /= tl;
+    ty /= tl;
+  }
+  const tangent = new THREE.Vector3(tx, slope, -ty).normalize();
 
   // Right-hand basis: right = tangent x worldUp, up = right x tangent.
   const right = new THREE.Vector3().crossVectors(tangent, WORLD_UP);

@@ -208,11 +208,11 @@ function ApexMarkers({ corner }: { corner: CornerData }) {
     <group>
       {markers.map((m) => (
         <group key={m.name} position={m.pos}>
-          <mesh position={[0, 3, 0]}>
+          <mesh position={[0, 3, 0]} castShadow>
             <cylinderGeometry args={[0.08, 0.08, 6, 8]} />
             <meshStandardMaterial color="#ffffff" emissive="#4fd8ff" emissiveIntensity={1.2} />
           </mesh>
-          <mesh position={[0, 6, 0]} rotation={[Math.PI / 2, 0, 0]}>
+          <mesh position={[0, 6, 0]} rotation={[Math.PI / 2, 0, 0]} castShadow>
             <torusGeometry args={[0.9, 0.09, 8, 32]} />
             <meshStandardMaterial color="#ffffff" emissive="#4fd8ff" emissiveIntensity={2} />
           </mesh>
@@ -261,7 +261,7 @@ function Contours({ corner }: { corner: CornerData }) {
       {lines.map((c) => (
         <group key={c.level_m}>
           <Line points={c.points} color="#e6f2ff" lineWidth={1.2} transparent opacity={0.55} depthWrite={false} />
-          <mesh position={[c.labelPos.x, c.labelPos.y + 2, c.labelPos.z]}>
+          <mesh position={[c.labelPos.x, c.labelPos.y + 2, c.labelPos.z]} castShadow>
             <cylinderGeometry args={[0.06, 0.06, 4, 6]} />
             <meshBasicMaterial color="#e6f2ff" transparent opacity={0.7} />
           </mesh>

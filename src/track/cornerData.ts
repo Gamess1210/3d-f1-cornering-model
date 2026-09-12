@@ -163,7 +163,7 @@ export const CORNERS: Record<CornerId, CornerData> = {
     bankingAt: () => eauRouge.primaryApex.bankingDeg,
     defaultParams: { approachSpeed_ms: 85, brakingPointBeforeApex_m: 10, frontWing: 0.9, rearWing: 0.9 },
     brakingRange: { min: 0, max: 80 },
-    cameraHint: { target: [170, 12, 200], position: [-45, 26, 330] },
+    cameraHint: { target: [165, 15, 192], position: [-100, 20, 120] },
   },
 };
 
