@@ -1,5 +1,7 @@
 # Spa Cornering Model — La Source & Eau Rouge/Raidillon
 
+**[Open the live app](https://gamess1210.github.io/3d-f1-cornering-model/)** — no install needed, runs in the browser.
+
 Interactive 3D model of how an F1 car's cornering speed responds to setup and driver inputs,
 built on real Spa-Francorchamps centerline geometry and a standalone physics engine.
 
