@@ -1,0 +1,925 @@
+{
+  "id": "eau-rouge-raidillon",
+  "displayName": "Eau Rouge / Raidillon (Turns 3-6)",
+  "track": "Circuit de Spa-Francorchamps",
+  "type": "high-speed-complex",
+  "description": "The most famous corner complex in motorsport: a fast left-right-left taken almost flat-out, with a ~30m uphill elevation change (~17% gradient at its steepest) through the climb from Eau Rouge into Raidillon.",
+  "primaryApex": {
+    "radius_m": 96.5,
+    "direction": "left",
+    "bankingDeg": 0,
+    "elevationChange_m": 30,
+    "note": "Representative radius uses the tightest of the three sub-apexes (Eau Rouge/Raidillon/exit are all similar radius, ~96-107m); elevation is a whole-complex figure, not physics-active in the MVP model -- see docs/PHYSICS_MODEL.md for the stretch-goal slope term."
+  },
+  "subApexes": [
+    {
+      "apexIndex": 212,
+      "apexDistance": 1059.1068761340666,
+      "x": 102.925,
+      "y": -108.864,
+      "radius_m": 96.5,
+      "direction": "left",
+      "entryIndex": 209,
+      "exitIndex": 215,
+      "entryDistance": 1044.1472938397767,
+      "exitDistance": 1074.0674833935464,
+      "number": 2,
+      "name": "Eau Rouge (entry, left-hander)",
+      "bankingDeg": 0,
+      "elevationChange_m": 30,
+      "note": "First of the Eau Rouge-Raidillon left-right-left complex. ~30m total elevation gain across corners #2-#4 (sources range 24-40.8m depending on exact measured span), steepest gradient ~17% on the Raidillon climb. Sources: oversteer48.com, circuitsofthepast.com, autosport.com forums track-gradient thread.",
+      "distFromSegmentStart": 150.0
+    },
+    {
+      "apexIndex": 227,
+      "apexDistance": 1134.0561448810686,
+      "x": 167.017,
+      "y": -147.334,
+      "radius_m": 97.3,
+      "direction": "right",
+      "entryIndex": 224,
+      "exitIndex": 245,
+      "entryDistance": 1119.1012185951868,
+      "exitDistance": 1223.8920256527847,
+      "number": 3,
+      "name": "Raidillon (middle, right-hander)",
+      "bankingDeg": 0,
+      "elevationChange_m": 0,
+      "note": "Middle of the Eau Rouge-Raidillon complex -- see corner #2 for the complex's overall elevation figure.",
+      "distFromSegmentStart": 224.949
+    },
+    {
+      "apexIndex": 257,
+      "apexDistance": 1283.9129952392068,
+      "x": 222.102,
+      "y": -283.672,
+      "radius_m": 107.0,
+      "direction": "left",
+      "entryIndex": 253,
+      "exitIndex": 262,
+      "entryDistance": 1264.0437724558788,
+      "exitDistance": 1308.8883685231424,
+      "number": 4,
+      "name": "Raidillon (exit, left-hander, crest)",
+      "bankingDeg": 0,
+      "elevationChange_m": 0,
+      "note": "Exit/crest of the Eau Rouge-Raidillon complex -- see corner #2 for the complex's overall elevation figure.",
+      "distFromSegmentStart": 374.806
+    }
+  ],
+  "segmentLength_m": 300,
+  "centerline": [
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "distFromSegmentStart": 0.075,
+      "wLeft": 4.81,
+      "wRight": 4.832,
+      "radius_m": 9999
+    },
+    {
+      "x": 3.367,
+      "y": -3.695,
+      "distFromSegmentStart": 5.073,
+      "wLeft": 4.808,
+      "wRight": 4.838,
+      "radius_m": 9999
+    },
+    {
+      "x": 6.733,
+      "y": -7.39,
+      "distFromSegmentStart": 10.072,
+      "wLeft": 4.806,
+      "wRight": 4.843,
+      "radius_m": 9999
+    },
+    {
+      "x": 10.099,
+      "y": -11.085,
+      "distFromSegmentStart": 15.07,
+      "wLeft": 4.804,
+      "wRight": 4.848,
+      "radius_m": 9999
+    },
+    {
+      "x": 13.465,
+      "y": -14.78,
+      "distFromSegmentStart": 20.069,
+      "wLeft": 4.803,
+      "wRight": 4.854,
+      "radius_m": 9999
+    },
+    {
+      "x": 16.832,
+      "y": -18.476,
+      "distFromSegmentStart": 25.068,
+      "wLeft": 4.801,
+      "wRight": 4.859,
+      "radius_m": 9999
+    },
+    {
+      "x": 20.198,
+      "y": -22.171,
+      "distFromSegmentStart": 30.066,
+      "wLeft": 4.799,
+      "wRight": 4.864,
+      "radius_m": 9999
+    },
+    {
+      "x": 23.564,
+      "y": -25.866,
+      "distFromSegmentStart": 35.065,
+      "wLeft": 4.797,
+      "wRight": 4.869,
+      "radius_m": 9999
+    },
+    {
+      "x": 26.931,
+      "y": -29.561,
+      "distFromSegmentStart": 40.064,
+      "wLeft": 4.795,
+      "wRight": 4.875,
+      "radius_m": 9999
+    },
+    {
+      "x": 30.299,
+      "y": -33.256,
+      "distFromSegmentStart": 45.063,
+      "wLeft": 4.794,
+      "wRight": 4.88,
+      "radius_m": 9999
+    },
+    {
+      "x": 33.667,
+      "y": -36.95,
+      "distFromSegmentStart": 50.062,
+      "wLeft": 4.792,
+      "wRight": 4.885,
+      "radius_m": 9999
+    },
+    {
+      "x": 37.036,
+      "y": -40.643,
+      "distFromSegmentStart": 55.061,
+      "wLeft": 4.79,
+      "wRight": 4.891,
+      "radius_m": 9999
+    },
+    {
+      "x": 40.405,
+      "y": -44.336,
+      "distFromSegmentStart": 60.06,
+      "wLeft": 4.788,
+      "wRight": 4.896,
+      "radius_m": 9999
+    },
+    {
+      "x": 43.776,
+      "y": -48.028,
+      "distFromSegmentStart": 65.059,
+      "wLeft": 4.786,
+      "wRight": 4.901,
+      "radius_m": 9999
+    },
+    {
+      "x": 47.148,
+      "y": -51.718,
+      "distFromSegmentStart": 70.058,
+      "wLeft": 4.785,
+      "wRight": 4.906,
+      "radius_m": 9999
+    },
+    {
+      "x": 50.521,
+      "y": -55.407,
+      "distFromSegmentStart": 75.057,
+      "wLeft": 4.783,
+      "wRight": 4.912,
+      "radius_m": 9999
+    },
+    {
+      "x": 53.896,
+      "y": -59.094,
+      "distFromSegmentStart": 80.055,
+      "wLeft": 4.781,
+      "wRight": 4.917,
+      "radius_m": 9999
+    },
+    {
+      "x": 57.272,
+      "y": -62.78,
+      "distFromSegmentStart": 85.054,
+      "wLeft": 4.779,
+      "wRight": 4.922,
+      "radius_m": 9251.6
+    },
+    {
+      "x": 60.65,
+      "y": -66.464,
+      "distFromSegmentStart": 90.052,
+      "wLeft": 4.777,
+      "wRight": 4.928,
+      "radius_m": 7297.9
+    },
+    {
+      "x": 64.03,
+      "y": -70.145,
+      "distFromSegmentStart": 95.049,
+      "wLeft": 4.776,
+      "wRight": 4.933,
+      "radius_m": 4687.2
+    },
+    {
+      "x": 67.412,
+      "y": -73.824,
+      "distFromSegmentStart": 100.046,
+      "wLeft": 4.774,
+      "wRight": 4.938,
+      "radius_m": 2726.3
+    },
+    {
+      "x": 70.797,
+      "y": -77.5,
+      "distFromSegmentStart": 105.043,
+      "wLeft": 4.786,
+      "wRight": 4.912,
+      "radius_m": 1600.0
+    },
+    {
+      "x": 74.189,
+      "y": -81.168,
+      "distFromSegmentStart": 110.04,
+      "wLeft": 4.804,
+      "wRight": 4.875,
+      "radius_m": 1016.7
+    },
+    {
+      "x": 77.598,
+      "y": -84.821,
+      "distFromSegmentStart": 115.037,
+      "wLeft": 4.821,
+      "wRight": 4.838,
+      "radius_m": 699.0
+    },
+    {
+      "x": 81.034,
+      "y": -88.451,
+      "distFromSegmentStart": 120.034,
+      "wLeft": 4.839,
+      "wRight": 4.801,
+      "radius_m": 493.5
+    },
+    {
+      "x": 84.504,
+      "y": -92.049,
+      "distFromSegmentStart": 125.033,
+      "wLeft": 4.856,
+      "wRight": 4.764,
+      "radius_m": 350.6
+    },
+    {
+      "x": 88.019,
+      "y": -95.608,
+      "distFromSegmentStart": 130.036,
+      "wLeft": 4.783,
+      "wRight": 4.766,
+      "radius_m": 249.3
+    },
+    {
+      "x": 91.591,
+      "y": -99.114,
+      "distFromSegmentStart": 135.04,
+      "wLeft": 4.437,
+      "wRight": 4.886,
+      "radius_m": 179.1
+    },
+    {
+      "x": 95.246,
+      "y": -102.524,
+      "distFromSegmentStart": 140.039,
+      "wLeft": 4.113,
+      "wRight": 4.977,
+      "radius_m": 133.8
+    },
+    {
+      "x": 99.014,
+      "y": -105.79,
+      "distFromSegmentStart": 145.026,
+      "wLeft": 4.144,
+      "wRight": 4.591,
+      "radius_m": 108.1
+    },
+    {
+      "x": 102.925,
+      "y": -108.864,
+      "distFromSegmentStart": 150.0,
+      "wLeft": 4.175,
+      "wRight": 4.204,
+      "radius_m": 96.5
+    },
+    {
+      "x": 107.008,
+      "y": -111.697,
+      "distFromSegmentStart": 154.97,
+      "wLeft": 4.193,
+      "wRight": 4.329,
+      "radius_m": 97.0
+    },
+    {
+      "x": 111.286,
+      "y": -114.253,
+      "distFromSegmentStart": 159.953,
+      "wLeft": 4.209,
+      "wRight": 4.498,
+      "radius_m": 114.7
+    },
+    {
+      "x": 115.719,
+      "y": -116.581,
+      "distFromSegmentStart": 164.96,
+      "wLeft": 4.226,
+      "wRight": 4.667,
+      "radius_m": 172.5
+    },
+    {
+      "x": 120.244,
+      "y": -118.773,
+      "distFromSegmentStart": 169.988,
+      "wLeft": 4.31,
+      "wRight": 4.71,
+      "radius_m": 467.8
+    },
+    {
+      "x": 124.793,
+      "y": -120.92,
+      "distFromSegmentStart": 175.018,
+      "wLeft": 4.484,
+      "wRight": 4.586,
+      "radius_m": 776.9
+    },
+    {
+      "x": 129.301,
+      "y": -123.112,
+      "distFromSegmentStart": 180.031,
+      "wLeft": 4.658,
+      "wRight": 4.462,
+      "radius_m": 287.5
+    },
+    {
+      "x": 133.703,
+      "y": -125.439,
+      "distFromSegmentStart": 185.01,
+      "wLeft": 4.833,
+      "wRight": 4.339,
+      "radius_m": 249.8
+    },
+    {
+      "x": 137.979,
+      "y": -127.94,
+      "distFromSegmentStart": 189.963,
+      "wLeft": 4.752,
+      "wRight": 4.378,
+      "radius_m": 305.3
+    },
+    {
+      "x": 142.21,
+      "y": -130.528,
+      "distFromSegmentStart": 194.923,
+      "wLeft": 4.607,
+      "wRight": 4.459,
+      "radius_m": 401.5
+    },
+    {
+      "x": 146.492,
+      "y": -133.104,
+      "distFromSegmentStart": 199.921,
+      "wLeft": 4.463,
+      "wRight": 4.539,
+      "radius_m": 365.2
+    },
+    {
+      "x": 150.833,
+      "y": -135.656,
+      "distFromSegmentStart": 204.956,
+      "wLeft": 4.318,
+      "wRight": 4.62,
+      "radius_m": 228.6
+    },
+    {
+      "x": 155.132,
+      "y": -138.282,
+      "distFromSegmentStart": 209.994,
+      "wLeft": 4.355,
+      "wRight": 4.576,
+      "radius_m": 147.5
+    },
+    {
+      "x": 159.283,
+      "y": -141.087,
+      "distFromSegmentStart": 215.003,
+      "wLeft": 4.459,
+      "wRight": 4.487,
+      "radius_m": 112.4
+    },
+    {
+      "x": 163.242,
+      "y": -144.108,
+      "distFromSegmentStart": 219.984,
+      "wLeft": 4.633,
+      "wRight": 4.333,
+      "radius_m": 99.2
+    },
+    {
+      "x": 167.017,
+      "y": -147.334,
+      "distFromSegmentStart": 224.949,
+      "wLeft": 4.892,
+      "wRight": 4.1,
+      "radius_m": 97.3
+    },
+    {
+      "x": 170.615,
+      "y": -150.75,
+      "distFromSegmentStart": 229.911,
+      "wLeft": 4.695,
+      "wRight": 4.308,
+      "radius_m": 101.5
+    },
+    {
+      "x": 174.045,
+      "y": -154.344,
+      "distFromSegmentStart": 234.879,
+      "wLeft": 4.506,
+      "wRight": 4.508,
+      "radius_m": 108.4
+    },
+    {
+      "x": 177.315,
+      "y": -158.101,
+      "distFromSegmentStart": 239.86,
+      "wLeft": 4.576,
+      "wRight": 4.455,
+      "radius_m": 116.3
+    },
+    {
+      "x": 180.433,
+      "y": -162.006,
+      "distFromSegmentStart": 244.857,
+      "wLeft": 4.638,
+      "wRight": 4.419,
+      "radius_m": 125.0
+    },
+    {
+      "x": 183.401,
+      "y": -166.044,
+      "distFromSegmentStart": 249.868,
+      "wLeft": 4.635,
+      "wRight": 4.522,
+      "radius_m": 134.4
+    },
+    {
+      "x": 186.223,
+      "y": -170.197,
+      "distFromSegmentStart": 254.889,
+      "wLeft": 4.632,
+      "wRight": 4.625,
+      "radius_m": 143.9
+    },
+    {
+      "x": 188.901,
+      "y": -174.447,
+      "distFromSegmentStart": 259.913,
+      "wLeft": 4.649,
+      "wRight": 4.635,
+      "radius_m": 152.9
+    },
+    {
+      "x": 191.44,
+      "y": -178.777,
+      "distFromSegmentStart": 264.932,
+      "wLeft": 4.687,
+      "wRight": 4.546,
+      "radius_m": 160.8
+    },
+    {
+      "x": 193.84,
+      "y": -183.172,
+      "distFromSegmentStart": 269.939,
+      "wLeft": 4.724,
+      "wRight": 4.457,
+      "radius_m": 166.7
+    },
+    {
+      "x": 196.104,
+      "y": -187.623,
+      "distFromSegmentStart": 274.934,
+      "wLeft": 4.758,
+      "wRight": 4.374,
+      "radius_m": 170.9
+    },
+    {
+      "x": 198.234,
+      "y": -192.131,
+      "distFromSegmentStart": 279.919,
+      "wLeft": 4.778,
+      "wRight": 4.314,
+      "radius_m": 173.9
+    },
+    {
+      "x": 200.232,
+      "y": -196.692,
+      "distFromSegmentStart": 284.898,
+      "wLeft": 4.799,
+      "wRight": 4.254,
+      "radius_m": 176.4
+    },
+    {
+      "x": 202.098,
+      "y": -201.304,
+      "distFromSegmentStart": 289.874,
+      "wLeft": 4.819,
+      "wRight": 4.194,
+      "radius_m": 179.0
+    },
+    {
+      "x": 203.836,
+      "y": -205.966,
+      "distFromSegmentStart": 294.849,
+      "wLeft": 4.793,
+      "wRight": 4.155,
+      "radius_m": 182.0
+    },
+    {
+      "x": 205.445,
+      "y": -210.675,
+      "distFromSegmentStart": 299.825,
+      "wLeft": 4.669,
+      "wRight": 4.161,
+      "radius_m": 185.2
+    },
+    {
+      "x": 206.928,
+      "y": -215.429,
+      "distFromSegmentStart": 304.805,
+      "wLeft": 4.546,
+      "wRight": 4.167,
+      "radius_m": 188.9
+    },
+    {
+      "x": 208.287,
+      "y": -220.226,
+      "distFromSegmentStart": 309.791,
+      "wLeft": 4.423,
+      "wRight": 4.173,
+      "radius_m": 194.8
+    },
+    {
+      "x": 209.522,
+      "y": -225.065,
+      "distFromSegmentStart": 314.785,
+      "wLeft": 4.315,
+      "wRight": 4.18,
+      "radius_m": 207.1
+    },
+    {
+      "x": 210.637,
+      "y": -229.942,
+      "distFromSegmentStart": 319.788,
+      "wLeft": 4.301,
+      "wRight": 4.201,
+      "radius_m": 232.6
+    },
+    {
+      "x": 211.633,
+      "y": -234.856,
+      "distFromSegmentStart": 324.802,
+      "wLeft": 4.286,
+      "wRight": 4.221,
+      "radius_m": 288.3
+    },
+    {
+      "x": 212.531,
+      "y": -239.799,
+      "distFromSegmentStart": 329.826,
+      "wLeft": 4.272,
+      "wRight": 4.241,
+      "radius_m": 425.1
+    },
+    {
+      "x": 213.367,
+      "y": -244.759,
+      "distFromSegmentStart": 334.856,
+      "wLeft": 4.258,
+      "wRight": 4.261,
+      "radius_m": 966.4
+    },
+    {
+      "x": 214.177,
+      "y": -249.725,
+      "distFromSegmentStart": 339.888,
+      "wLeft": 4.342,
+      "wRight": 4.276,
+      "radius_m": 2482.6
+    },
+    {
+      "x": 214.996,
+      "y": -254.686,
+      "distFromSegmentStart": 344.915,
+      "wLeft": 4.525,
+      "wRight": 4.285,
+      "radius_m": 530.3
+    },
+    {
+      "x": 215.86,
+      "y": -259.628,
+      "distFromSegmentStart": 349.933,
+      "wLeft": 4.658,
+      "wRight": 4.29,
+      "radius_m": 295.2
+    },
+    {
+      "x": 216.805,
+      "y": -264.542,
+      "distFromSegmentStart": 354.937,
+      "wLeft": 4.524,
+      "wRight": 4.27,
+      "radius_m": 203.6
+    },
+    {
+      "x": 217.866,
+      "y": -269.415,
+      "distFromSegmentStart": 359.924,
+      "wLeft": 4.39,
+      "wRight": 4.251,
+      "radius_m": 155.3
+    },
+    {
+      "x": 219.078,
+      "y": -274.235,
+      "distFromSegmentStart": 364.894,
+      "wLeft": 4.245,
+      "wRight": 4.238,
+      "radius_m": 127.9
+    },
+    {
+      "x": 220.478,
+      "y": -278.991,
+      "distFromSegmentStart": 369.852,
+      "wLeft": 4.075,
+      "wRight": 4.24,
+      "radius_m": 112.9
+    },
+    {
+      "x": 222.102,
+      "y": -283.672,
+      "distFromSegmentStart": 374.806,
+      "wLeft": 3.951,
+      "wRight": 4.248,
+      "radius_m": 107.0
+    },
+    {
+      "x": 223.978,
+      "y": -288.266,
+      "distFromSegmentStart": 379.769,
+      "wLeft": 3.888,
+      "wRight": 4.264,
+      "radius_m": 109.3
+    },
+    {
+      "x": 226.091,
+      "y": -292.775,
+      "distFromSegmentStart": 384.749,
+      "wLeft": 3.902,
+      "wRight": 4.515,
+      "radius_m": 119.7
+    },
+    {
+      "x": 228.405,
+      "y": -297.206,
+      "distFromSegmentStart": 389.747,
+      "wLeft": 3.968,
+      "wRight": 4.636,
+      "radius_m": 139.1
+    },
+    {
+      "x": 230.884,
+      "y": -301.563,
+      "distFromSegmentStart": 394.76,
+      "wLeft": 4.103,
+      "wRight": 4.508,
+      "radius_m": 169.9
+    },
+    {
+      "x": 233.492,
+      "y": -305.854,
+      "distFromSegmentStart": 399.781,
+      "wLeft": 4.239,
+      "wRight": 4.38,
+      "radius_m": 214.3
+    },
+    {
+      "x": 236.193,
+      "y": -310.083,
+      "distFromSegmentStart": 404.8,
+      "wLeft": 4.298,
+      "wRight": 4.29,
+      "radius_m": 277.3
+    },
+    {
+      "x": 238.957,
+      "y": -314.26,
+      "distFromSegmentStart": 409.808,
+      "wLeft": 4.34,
+      "wRight": 4.209,
+      "radius_m": 368.5
+    },
+    {
+      "x": 241.769,
+      "y": -318.394,
+      "distFromSegmentStart": 414.808,
+      "wLeft": 4.382,
+      "wRight": 4.128,
+      "radius_m": 514.5
+    },
+    {
+      "x": 244.618,
+      "y": -322.496,
+      "distFromSegmentStart": 419.802,
+      "wLeft": 4.38,
+      "wRight": 4.108,
+      "radius_m": 785.1
+    },
+    {
+      "x": 247.49,
+      "y": -326.578,
+      "distFromSegmentStart": 424.794,
+      "wLeft": 4.349,
+      "wRight": 4.128,
+      "radius_m": 1418.9
+    },
+    {
+      "x": 250.374,
+      "y": -330.652,
+      "distFromSegmentStart": 429.785,
+      "wLeft": 4.319,
+      "wRight": 4.148,
+      "radius_m": 3974.1
+    },
+    {
+      "x": 253.257,
+      "y": -334.727,
+      "distFromSegmentStart": 434.777,
+      "wLeft": 4.288,
+      "wRight": 4.168,
+      "radius_m": 9999
+    },
+    {
+      "x": 256.135,
+      "y": -338.809,
+      "distFromSegmentStart": 439.771,
+      "wLeft": 4.257,
+      "wRight": 4.187,
+      "radius_m": 5096.1
+    },
+    {
+      "x": 259.008,
+      "y": -342.897,
+      "distFromSegmentStart": 444.767,
+      "wLeft": 4.226,
+      "wRight": 4.207,
+      "radius_m": 4171.0
+    },
+    {
+      "x": 261.876,
+      "y": -346.989,
+      "distFromSegmentStart": 449.764,
+      "wLeft": 4.195,
+      "wRight": 4.227,
+      "radius_m": 4514.6
+    },
+    {
+      "x": 264.74,
+      "y": -351.086,
+      "distFromSegmentStart": 454.763,
+      "wLeft": 4.164,
+      "wRight": 4.246,
+      "radius_m": 5433.2
+    },
+    {
+      "x": 267.601,
+      "y": -355.186,
+      "distFromSegmentStart": 459.763,
+      "wLeft": 4.134,
+      "wRight": 4.266,
+      "radius_m": 6840.0
+    },
+    {
+      "x": 270.46,
+      "y": -359.288,
+      "distFromSegmentStart": 464.763,
+      "wLeft": 4.125,
+      "wRight": 4.278,
+      "radius_m": 9225.3
+    },
+    {
+      "x": 273.316,
+      "y": -363.393,
+      "distFromSegmentStart": 469.764,
+      "wLeft": 4.135,
+      "wRight": 4.284,
+      "radius_m": 9999
+    },
+    {
+      "x": 276.171,
+      "y": -367.499,
+      "distFromSegmentStart": 474.765,
+      "wLeft": 4.146,
+      "wRight": 4.29,
+      "radius_m": 9999
+    },
+    {
+      "x": 279.026,
+      "y": -371.605,
+      "distFromSegmentStart": 479.766,
+      "wLeft": 4.157,
+      "wRight": 4.296,
+      "radius_m": 9999
+    },
+    {
+      "x": 281.88,
+      "y": -375.711,
+      "distFromSegmentStart": 484.767,
+      "wLeft": 4.168,
+      "wRight": 4.301,
+      "radius_m": 9999
+    },
+    {
+      "x": 284.735,
+      "y": -379.816,
+      "distFromSegmentStart": 489.767,
+      "wLeft": 4.179,
+      "wRight": 4.307,
+      "radius_m": 9999
+    },
+    {
+      "x": 287.591,
+      "y": -383.92,
+      "distFromSegmentStart": 494.767,
+      "wLeft": 4.19,
+      "wRight": 4.313,
+      "radius_m": 9999
+    },
+    {
+      "x": 290.447,
+      "y": -388.023,
+      "distFromSegmentStart": 499.766,
+      "wLeft": 4.2,
+      "wRight": 4.318,
+      "radius_m": 9999
+    },
+    {
+      "x": 293.304,
+      "y": -392.125,
+      "distFromSegmentStart": 504.765,
+      "wLeft": 4.211,
+      "wRight": 4.324,
+      "radius_m": 9999
+    },
+    {
+      "x": 296.162,
+      "y": -396.226,
+      "distFromSegmentStart": 509.763,
+      "wLeft": 4.222,
+      "wRight": 4.33,
+      "radius_m": 9999
+    },
+    {
+      "x": 299.021,
+      "y": -400.326,
+      "distFromSegmentStart": 514.761,
+      "wLeft": 4.233,
+      "wRight": 4.335,
+      "radius_m": 9999
+    },
+    {
+      "x": 301.88,
+      "y": -404.425,
+      "distFromSegmentStart": 519.759,
+      "wLeft": 4.244,
+      "wRight": 4.341,
+      "radius_m": 9999
+    },
+    {
+      "x": 304.74,
+      "y": -408.524,
+      "distFromSegmentStart": 524.757,
+      "wLeft": 4.255,
+      "wRight": 4.347,
+      "radius_m": 9999
+    }
+  ],
+  "realWorldReference": {
+    "typicalApexSpeed_kmh": 300,
+    "note": "Approximate, publicly reported broadcast/analysis figures -- not official telemetry."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source": "FastF1",
+  "session": "2023 Belgium Grand Prix -- Qualifying",
+  "driver": "VER",
+  "lapTime": "0 days 00:01:46.168000",
+  "note": "Corners identified by speed-trace signature (deepest early minimum = La Source, next high-speed dip = Eau Rouge entry), not by precise distance registration against the TUMFTM centerline -- treat as an order-of-magnitude calibration reference, not ground truth telemetry for a specific named corner.",
+  "laSource": {
+    "distance_m": 384.98750000000007,
+    "speed_kmh": 68.0
+  },
+  "eauRougeEntry": {
+    "distance_m": 577.0772222222224,
+    "speed_kmh": 235.0
+  }
+}

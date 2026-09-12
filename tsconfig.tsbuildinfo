@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./physics/aero.ts","./physics/brakemodel.ts","./physics/constants.ts","./physics/cornermodel.ts","./physics/frictioncircle.ts","./physics/tires.ts","./physics/types.ts","./physics/__tests__/cornermodel.test.ts"],"errors":true,"version":"5.9.3"}

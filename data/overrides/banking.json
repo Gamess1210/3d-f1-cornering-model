@@ -1,0 +1,41 @@
+{
+  "_comment": "Manual, source-cited overrides for track features that can't be derived from a flat x/y centerline (banking angle, elevation delta). Keyed by track id (matches raw CSV filename) -> corner NUMBER (as assigned by build_tracks.py's auto-detection, 1-indexed in direction of travel -- re-check numbering after any change to the detection thresholds) -> override fields. Only include a corner here if you have a real, cited source; everything else defaults to flat/zero in build_tracks.py.",
+
+  "Zandvoort": {
+    "_note": "Keys are AUTO-DETECTED corner numbers from build_tracks.py's output (data/tracks/zandvoort.json), not Zandvoort's official FIA turn numbers -- the two don't align 1:1 because our threshold merges/splits some corners differently. Mapping was verified geometrically: correct lap direction (clockwise, matches official layout), correct turn direction (left/right), correct relative position along the lap (early vs late), and plausible radius (large radius = fast banked sweeper, consistent with both corners being taken at high, near-flat-out speed).",
+    "2": {
+      "name": "Hugenholtzbocht (official Turn 3)",
+      "bankingDeg": 19,
+      "elevationChange_m": 0,
+      "note": "Auto-detected corner #2: left-hand, radius ~210m, ~625m into the lap -- matches Hugenholtzbocht (confirmed left-hand corner, early in lap, fast sweeper). Banked ~18-19 degrees, rebuilt for F1's 2020/2021 return. Sources: motorsportweek.com/2020/02/27, the-race.com banked-corners coverage, f1chronicle.com Zandvoort guide."
+    },
+    "17": {
+      "name": "Arie Luyendijkbocht (official Turn 14)",
+      "bankingDeg": 18,
+      "elevationChange_m": 0,
+      "note": "Auto-detected corner #17: right-hand, radius ~128m, ~3912m into a ~4316m lap (i.e. the final corner before the pit straight) -- matches Arie Luyendijkbocht's known position leading onto the main straight. Direction (right) is geometrically inferred from the centerline, not explicitly confirmed in sourced text -- treat with slightly lower confidence than Turn 3. Banked ~18 degrees. Sources: same as Turn 3."
+    }
+  },
+
+  "Spa": {
+    "_note": "Eau Rouge-Raidillon is a left-right-left complex, which auto-detection correctly picked up as three separate corners (#2, #3, #4), immediately after La Source hairpin (#1, right, radius 17.1m -- the tightest corner on the track, correctly identified as La Source). The elevation figure applies to the complex as a whole (Eau Rouge at the bottom through the Raidillon crest), not to a single apex, so it's repeated on all three with a shared note.",
+    "2": {
+      "name": "Eau Rouge (entry, left-hander)",
+      "bankingDeg": 0,
+      "elevationChange_m": 30,
+      "note": "First of the Eau Rouge-Raidillon left-right-left complex. ~30m total elevation gain across corners #2-#4 (sources range 24-40.8m depending on exact measured span), steepest gradient ~17% on the Raidillon climb. Sources: oversteer48.com, circuitsofthepast.com, autosport.com forums track-gradient thread."
+    },
+    "3": {
+      "name": "Raidillon (middle, right-hander)",
+      "bankingDeg": 0,
+      "elevationChange_m": 0,
+      "note": "Middle of the Eau Rouge-Raidillon complex -- see corner #2 for the complex's overall elevation figure."
+    },
+    "4": {
+      "name": "Raidillon (exit, left-hander, crest)",
+      "bankingDeg": 0,
+      "elevationChange_m": 0,
+      "note": "Exit/crest of the Eau Rouge-Raidillon complex -- see corner #2 for the complex's overall elevation figure."
+    }
+  }
+}

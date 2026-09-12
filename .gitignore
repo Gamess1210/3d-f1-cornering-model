@@ -1,0 +1,19 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+tsconfig.tsbuildinfo
+
+# local Claude Code settings/permissions (machine-specific, not project config)
+.claude/
+
+# fastf1 telemetry cache (large, regenerable via scripts/fetch_spa_telemetry.py)
+data/raw/telemetry/.fastf1cache/
+
+# editor/OS cruft
+.vscode/
+.DS_Store
+Thumbs.db
+
+# logs
+npm-debug.log*
